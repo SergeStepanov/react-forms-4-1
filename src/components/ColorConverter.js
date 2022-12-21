@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ConverterRGB from './ConverterRGB';
+import ConverterRGB from './helperFunctions/ConverterRGB';
 
 function ColorConverter() {
   const [inColor, setInColor] = useState('');
@@ -36,6 +36,8 @@ function ColorConverter() {
           value={inColor}
           onChange={handleConverter}
           title='HEX фомат: #af09AF'
+          placeholder='#afAF09'
+          autoFocus
         />
         <p className='out-color'>{outColor}</p>
       </div>
